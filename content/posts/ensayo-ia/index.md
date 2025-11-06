@@ -1,12 +1,13 @@
 ---
-title: "Tutorial para escribir en LaTex"
+title: "Ensayo sobre la IA"
 description: "..."
 categories: ["tutorial"]
-tags: ["latex"]
+tags: ["IA"]
 draft: false
 date: 2025-11-06T14:45:00-06:00  
 ---
-{{< youtubeLite id="9iT2WEND8-E" label="Blowfish-tools demo" >}}
+
+{{< youtubeLite id="XTO61r_UjU4" label="Blowfish-tools demo" >}}
 
 ### Anexamos el video tutorial de como escribir en Latex.
 
@@ -17,11 +18,3 @@ Call to Action
 {{< /button >}}
 
 ### Referencias
-
-- [Tutorial de LaTex](https://manualdelatex.com/tutoriales)
-- ...
-
-```yaml
-test code:
-- test 
-```
