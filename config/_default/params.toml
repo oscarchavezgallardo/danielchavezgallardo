@@ -158,7 +158,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # enableTrackEvent = true
 
 [buymeacoffee]
-  identifier = "https://buymeacoffee.com/oscarchavezgallardo"
+  identifier = "oscarchavezgallardo"
   globalWidget = true
   globalWidgetMessage = "¡Invítame un café!"
   globalWidgetColor = "#FFDD00"
