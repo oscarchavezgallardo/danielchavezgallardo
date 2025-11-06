@@ -14,14 +14,14 @@ title = "Blowfish"
   # description = "My awesome website"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-#  [params.author]
-#    name = "Oscar Chávez Gallardo"
-#    email = "odchg@ciencias.unam.mx"
-#    image = "img/avatar.jpg"
-#    imageQuality = 96
-#    headline = "Hi! I'm Oscar, P "
-#    bio = "A little bit about you"
-#    links = [
+ [params.author]
+   name = "Oscar Chávez Gallardo"
+   email = "odchg@ciencias.unam.mx"
+ ##  image = "img/avatar.jpg"
+   imageQuality = 96
+   headline = "Hi! I'm Oscar, P "
+   bio = "A little bit about you"
+   links = [
 #     { email = "mailto:hello@your_domain.com" },
 #     { link = "https://link-to-some-website.com/" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
@@ -70,7 +70,7 @@ title = "Blowfish"
 #     { twitter = "https://twitter.com/username" },
 #     { x-twitter = "https://twitter.com/username" },
 #     { whatsapp = "https://wa.me/phone-number" },
-#     { youtube = "https://youtube.com/username" },
+    { youtube = "https://www.youtube.com/@oscardanielgallardo"},
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
-#   ]
+  ]
