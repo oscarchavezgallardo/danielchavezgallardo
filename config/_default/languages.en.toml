@@ -17,7 +17,7 @@ title = "Blowfish"
  [params.author]
    name = "Oscar Chávez Gallardo"
    email = "odchg@ciencias.unam.mx"
-#  image = "img/avatar.jpg"
+   image = "img/avatar.jpg"
    imageQuality = 96
    headline = "Hi! I'm Oscar, P "
    bio = "A little bit about you"
