@@ -5,9 +5,9 @@ categories: ["tutorial"]
 tags: ["latex", "formulas"]
 draft: false
 ---
-
 {{< youtubeLite id="9iT2WEND8-E" label="Blowfish-tools demo" >}}
-### que hago
+
+### Anexamos el video tutorial de como escribir en Latex.
 
 Aquí introducimos como poner ecuaciones en Latex.
 
@@ -24,4 +24,3 @@ Call to Action
 test code:
 - test 
 ```
-
