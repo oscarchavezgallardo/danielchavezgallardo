@@ -1,0 +1,25 @@
+/*
+ * FUERZA EL FONDO PARA LA PÁGINA DE LISTA (/POSTS)
+ * Apuntamos al contenedor principal de la lista
+ */
+.list-page {
+    /* Mantenemos el selector por si acaso */
+    background-image: url("/img/wald.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* ⬅️ AÑADIMOS EL SELECTOR MÁS AGRESIVO: EL CONTENEDOR PRINCIPAL DEL SITIO */
+.site-main {
+    /* Usamos !important para anular cualquier regla de Tailwind o del tema */
+    background-image: url("/img/wald.jpg") !important; 
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+}
+
+/* Eliminamos el color de fondo púrpura predeterminado */
+.hero-container {
+    background-color: transparent !important;
+}
