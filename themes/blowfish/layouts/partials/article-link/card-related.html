@@ -29,14 +29,14 @@
   {{ end }}
 
   {{/* fallback to default */}}
-  {{ if not (or $featured $featuredURL) }}
+  {{/* if not (or $featured $featuredURL) }}
     {{ $default := site.Store.Get "defaultFeaturedImage" }}
     {{ if $default.url }}
       {{ $featuredURL = $default.url }}
     {{ else if $default.obj }}
       {{ $featured = $default.obj }}
     {{ end }}
-  {{ end }}
+  {{ end */}}
 
   {{/* generate image URL if not hotlink */}}
   {{ if not $featuredURL }}
