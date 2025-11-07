@@ -7,7 +7,7 @@ draft: false
 date: 2025-11-06T14:45:00-06:00  
 ---
 
-{{< youtubeLite id="XTO61r_UjU4" label="Blowfish-tools demo" >}}
+{{< youtubeLite id="HzOAHRli6I" label="Blowfish-tools demo" >}}
 
 ### Anexamos el video tutorial de como escribir en Latex.
 
