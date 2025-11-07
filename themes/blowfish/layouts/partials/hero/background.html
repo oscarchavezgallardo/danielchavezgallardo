@@ -37,10 +37,10 @@
 {{ if not $featuredURL }}
   {{ with $featured }}
     {{ $featuredURL = .RelPermalink }}
-    {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
+    {{/* if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
       {{ $size := site.Store.Get "backgroundImageWidth" }}
       {{ $featuredURL = (.Resize $size).RelPermalink }}
-    {{ end }}
+    {{ end */}}
   {{ end }}
 {{ end }}
 

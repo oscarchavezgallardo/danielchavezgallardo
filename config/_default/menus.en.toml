@@ -11,9 +11,9 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Blog"
-  pageRef = "posts"
-  weight = 10
+name = "Blog"
+pageRef = "/"
+weight = 10
 
 # [[main]]
 #   name = "Parent"
@@ -26,9 +26,9 @@
 #   weight = 20
 
 [[main]]
-  name = "Libros y Películas"
-  pageRef = "posts"
-  weight = 20
+name = "Libros y Películas"
+pageRef = "posts"
+weight = 20
 
 # [[subnavigation]]
 #   name = "An interesting topic"
@@ -42,14 +42,14 @@
 #  weight = 20
 
 [[main]]
-  name = "Categories"
-  pageRef = "categories"
-  weight = 30
+name = "Categories"
+pageRef = "categories"
+weight = 30
 
 [[main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 40
+name = "Tags"
+pageRef = "tags"
+weight = 40
 
 
 # -- Footer Menu --
