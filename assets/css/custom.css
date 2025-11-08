@@ -1,0 +1,24 @@
+/*
+ * FUERZA EL DISEÑO DE CUADRÍCULA (GRID) PARA POSTS RECIENTES EN LA HOME
+ */
+#recent-posts-list {
+    display: grid !important; /* Forzar el Grid Layout */
+    
+    /* Configura las columnas para que haya al menos 2 elementos por fila */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 30px; /* Espacio entre los posts */
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ⬅️ CRUCIAL: ESTO ELIMINA EL TEXTO DE DEPURACIÓN EN LA VISTA PREVIA */
+/* Por favor, haz un esfuerzo por ELIMINAR el texto "" de tus archivos .md */
+.article-link-simple > *:first-child {
+    display: none !important;
+}
+
+/* ⬅️ Asegúrate de que el contenedor de lista no tenga un ancho fijo que rompa la cuadrícula */
+.list-page-entry {
+    width: 100%; 
+    min-width: 300px;
+}
