@@ -1,62 +1,98 @@
 /*
  * =======================================================================
- * SECCIÓN 1: DISEÑO DE PÁGINA DE INICIO (GRID)
- * Fuerza el diseño de cuadrícula (Grid) para la sección de posts recientes.
+ * SECCIÓN 1: DISEÑO DE CUADRÍCULA (GRID)
+ * Fuerza el diseño de cuadrícula y la alineación horizontal.
  * =======================================================================
  */
+
+/* 1. CONTENEDOR DE LA CUADRÍCULA (GRID) */
 #recent-posts-list {
     display: grid !important; 
-    
-    /* Define 2 o más columnas para la cuadrícula */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; 
-    gap: 30px !important; /* Espacio entre los elementos */
-    margin-top: 20px;
-    padding-bottom: 20px;
+    gap: 30px !important; 
+    width: 100% !important;
+    
+    /* Aseguramos que la cuadrícula alinee todo arriba */
+    align-content: flex-start !important; 
+    align-items: flex-start !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
+/* 2. DISEÑO DE CADA ENTRADA DE LA LISTA (PARA ALINEACIÓN VERTICAL) */
+/* Aplicamos Flexbox al contenedor de la entrada para alinear horizontalmente */
 /*
- * === SECCIÓN 2: LIMPIEZA Y ESPACIADO EN POST INDIVIDUAL ===
- * Solución agresiva para reducir el margen y el espacio vertical innecesario.
+ * === SECCIÓN 1: DISEÑO DE CUADRÍCULA (GRID) ===
  */
 
-
-
- 
-/* 1. Reducir el padding general del encabezado (.article-header) */
-.article-header {
-    padding-top: 0.5rem !important; 
-    padding-bottom: 0.5rem !important; 
+/* Mantenemos el Grid en el contenedor principal */
+#recent-posts-list {
+    display: grid !important; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; 
+    gap: 30px !important; 
+    width: 100% !important;
+    
+    /* Aseguramos que la cuadrícula alinee todo arriba */
+    align-content: flex-start !important; 
+    align-items: flex-start !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
-/* 2. Reducir el margen inferior del título */
-.article-title {
-    margin-bottom: 0.2rem !important;
-}
-
-/* 3. Reducir el margen de la metainformación (Fecha, Tags) */
-.article-meta {
-    margin-top: 0.3rem !important;
-    margin-bottom: 0.8rem !important; 
-}
-
-/* 4. Asegura que el contenido (el video, texto) empiece sin margen excesivo */
-.article-content > *:first-child {
-    margin-top: 1rem !important; 
-}
-
-
-/*
- * === SECCIÓN 3: CORRECCIONES VISUALES FINALES ===
- */
-
-/* 1. ELIMINACIÓN DE TEXTO DE DEPURACIÓN EN LA VISTA PREVIA */
-/* Esto elimina el texto residual que queda en la página de inicio (debes borrarlo de tus .md también) */
-.article-link-simple > *:first-child {
-    display: none !important;
-}
-
-/* 2. Asegura que los elementos de lista no rompan la cuadrícula */
+/* ⬅️ CORRECCIÓN FINAL: Aplicar GRID al elemento de lista para que se alinee */
 .list-page-entry {
-    width: 100%; 
-    min-width: 300px;
+    display: grid !important; /* ⬅️ ¡AÑADIR ESTO AQUÍ! */
+    
+    /* Configuración para forzar que el contenido de texto empiece desde arriba */
+    grid-template-columns: 1fr !important;
+    
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 30px !important; 
+    padding-bottom: 0 !important;
+    width: 100% !important;
 }
+
+/* 3. DISEÑO INTERNO DE LA TARJETA (Imagen junto a Texto) */
+.article-link-simple {
+    width: 100% !important;
+    display: flex !important; 
+    flex-direction: row !important; /* ⬅️ FUERZA LA ALINEACIÓN HORIZONTAL DENTRO DE LA CELDA */
+    align-items: flex-start !important; /* Alinea Imagen/Texto a la izquierda */
+    min-height: 140px !important;
+    gap: 15px !important; 
+    padding: 15px !important; 
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; 
+    transition: transform 0.2s; 
+}
+
+
+/* 4. AJUSTE DE IMAGEN DESTACADA (Miniatura) */
+.article-link-simple img {
+    width: 80px !important; 
+    height: 80px !important; 
+    object-fit: cover !important; 
+    flex-shrink: 0 !important;
+    border-radius: 4px !important;
+}
+.article-link-simple .thumbnail-wrapper {
+    margin-top: 0 !important;
+}
+
+
+/*
+ * =======================================================================
+ * SECCIÓN 2: LIMPIEZA DE ESPACIADO Y TEXTO
+ * =======================================================================
+ */
+
+/* Reducción de Márgenes Internos */
+.article-header { padding-top: 0.2rem !important; padding-bottom: 0.2rem !important; }
+.article-title { margin-bottom: 0.2rem !important; font-size: 1.1rem !important; }
+.article-meta { margin-top: 0.2rem !important; margin-bottom: 0.2rem !important; font-size: 0.75rem !important; }
+.article-content > *:first-child { margin-top: 0.5rem !important; }
+
+/* Correcciones de Visualización */
+.homepage-section > div { display: block !important; } /* Deshace la posible columna Flexbox del tema */
+.article-link-simple > *:first-child:not(img) { display: none !important; } /* Elimina texto de depuración */

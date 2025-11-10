@@ -1,0 +1,8 @@
+{{ $recentArticles := .Site.Params.homepage.showRecentItems | default 5 }}
+
+{{/* Usaremos la sintaxis de bucle simple, asumiendo que el paginator se maneja en el archivo index.html */}}
+<section id="recent-posts-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    {{ range first $recentArticles .Site.RegularPages.ByDate.Reverse }}
+        {{ partial "article-link/simple.html" . }}
+    {{ end }}
+</section>
