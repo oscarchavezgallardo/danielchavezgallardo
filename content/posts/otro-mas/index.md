@@ -1,8 +1,8 @@
 ---
-title: "Tutorial para escribir en LaTex"
+title: "Susan Sontag"
 description: "..."
-categories: ["tuto"]
-tags: ["la"]
+categories: ["essay"]
+tags: ["deutsch"]
 draft: false
 date: 2025-11-06T14:45:00-06:00  
 ---

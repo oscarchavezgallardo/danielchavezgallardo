@@ -1,6 +1,6 @@
 ---
 title: "Ensayo sobre la IA"
-description: "..."
+description: "..no."
 categories: ["tutorial"]
 tags: ["IA"]
 draft: false
