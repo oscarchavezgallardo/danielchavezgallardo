@@ -10,7 +10,7 @@ defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
 
 replyByEmail = false
 
@@ -24,10 +24,9 @@ disableTextInHeader = false
 
 defaultBackgroundImage = "img/wald.jpg" # used as default for background images
 defaultFeaturedImage = "img/cover.png" # used as default for featured images in all articles
-# defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
+defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 highlightCurrentMenuArea = true
 # hotlinkFeatureImage = false
-imagePosition = "50% 50%"
 
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
@@ -48,75 +47,75 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "background" # valid options: page, profile, hero, card, background, custom
+  layout = "custom" # valid options: page, profile, hero, card, background, custom
 #  homepageImage = "img/wald.jpg" # used in: hero, and card
   showRecent = true
   showRecentItems = 12
   showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
   showDate = true
- #  showViews = true
- #  showLikes = false
-  showDateOnlyInArticle = true
-  showDateUpdated = true
+  showViews = false
+  showLikes = false
+  showDateOnlyInArticle = false
+  showDateUpdated = false
   showAuthor = true
-  showAuthorBottom = true
-  showHero = false
+## showAuthorBottom = true
+  showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/username/repo/"
-  editAppendPath = false
-  seriesOpened = true
+  showEdit = true
+  editURL = "https://github.com/nunocoracao/blowfish/tree/main/exampleSite/content"
+  editAppendPath = true
+  seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showRelatedContent = false
-#  relatedContentLimit = 3
+  showRelatedContent = true
+  relatedContentLimit = 6
   showTaxonomies = true # use showTaxonomies OR showCategoryOnly, not both
   cardView = true
   showComments = true
   showWordCount = false
   showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
-  showAuthorsBadges = false
-  # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
-  showZenMode = false
+  showAuthorsBadges = true
+  sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
+  showZenMode = true
 
 [list]
-  showHero = false
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = false
-  showSummary = false
- #  showViews = false
- #  showLikes = false
+  showViews = false
+  showLikes = false
   showTableOfContents = true
   showCards = true
-  orderByWeight = false
+  showSummary = false
+  orderByWeight = true
   groupByYear = false
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
-  constrainItemsWidth = true
+  constrainItemsWidth = false
 
 [sitemap]
-  excludedKinds = ["taxonomy", "term"]
+  excludedKinds = []
 
 [taxonomy]
   showTermCount = true
-  showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
@@ -124,14 +123,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardView = false
 
 [term]
-  showHero = false
+  showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
- #  showViews = false
- #  showLikes = false
+  showViews = false
+  showLikes = false
   showTableOfContents = true
-  groupByYear = true
-  cardView = false
+  groupByYear = false
+  cardView = true
   cardViewScreenWidth = false
 
 [firebase]

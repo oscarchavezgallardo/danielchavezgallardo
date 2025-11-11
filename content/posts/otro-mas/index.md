@@ -10,11 +10,23 @@ date: 2025-11-06T14:45:00-06:00
 
 ### Anexamos el video tutorial de como escribir en Latex.
 
+{{< carousel images="{https://cdn.pixabay.com/photo/2016/12/11/12/02/mountains-1899264_960_720.jpg,gallery/03.jpg,gallery/01.jpg,gallery/02.jpg,gallery/04.jpg}" >}}
+
 Aquí introducimos como poner ecuaciones en Latex.
 
-{{< button href="#button" target="_self" >}}
-Call to Action
-{{< /button >}}
+{{< katex >}}
+\(f(a,b,c) = (a^2+b^2+c^2)^3\)
+
+{{< chart >}}
+type: 'bar',
+data: {
+  labels: ['Tomato', 'Blueberry', 'Banana', 'Lime', 'Orange'],
+  datasets: [{
+    label: '# of votes',
+    data: [12, 19, 3, 5, 3],
+  }]
+}
+{{< /chart >}}
 
 ### Referencias
 
