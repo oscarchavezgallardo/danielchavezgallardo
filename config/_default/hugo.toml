@@ -13,16 +13,17 @@ canonifyURLs = true
 
 enableRobotsTXT = true
 summaryLength = 30
+hasCJKLanguage = true
 
 buildDrafts = false
 buildFuture = false
 
 enableEmoji = true
 
-# googleAnalytics = "G-PEDMYR1V0K"
+googleAnalytics = "G-PEDMYR1V0K"
 
 [pagination]
-  pagerSize = 100
+  pagerSize = 102
 
 [imaging]
   anchor = 'Center'
@@ -34,7 +35,7 @@ enableEmoji = true
   series = "series"
 
 [sitemap]
-  changefreq = 'daily'
+  changefreq = 'always'
   filename = 'sitemap.xml'
   priority = 0.5
 
@@ -70,3 +71,16 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[segments]
+  [segments.core]
+    [[segments.core.includes]]
+      # Debug core pages
+      path = '{/,/docs,/docs/**,/samples,/samples/**}'
+  [segments.en_only]
+    [[segments.en_only.includes]]
+      # Alternatively, you can use environment variable
+      #   - UNIX: HUGO_DISABLELANGUAGES='it ja zh-cn' npm run example:core
+      #   - Windows CMD: set "HUGO_DISABLELANGUAGES=it ja zh-cn" && npm run example:core
+      #   - Windows PowerShell: $env:HUGO_DISABLELANGUAGES="it ja zh-cn"; npm run example:core
+      lang = 'en'
