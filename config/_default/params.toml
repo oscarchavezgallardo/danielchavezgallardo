@@ -14,7 +14,7 @@ enableCodeCopy = true
 
 replyByEmail = false
 
-mainSections = ["posts"]
+mainSections = ["docs"]
 # robots = ""
 
 disableImageOptimization = false
@@ -25,9 +25,9 @@ disableTextInHeader = false
 defaultBackgroundImage = "img/wald.jpg" # used as default for background images
 defaultFeaturedImage = "img/cover.png" # used as default for featured images in all articles
 defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
-highlightCurrentMenuArea = true
-# hotlinkFeatureImage = false
+hotlinkFeatureImage = false
 
+highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
 
@@ -49,25 +49,25 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [homepage]
   layout = "custom" # valid options: page, profile, hero, card, background, custom
 #  homepageImage = "img/wald.jpg" # used in: hero, and card
-  showRecent = true
+  showRecent = false
   showRecentItems = 12
   showMoreLink = true
-  showMoreLinkDest = "/posts/"
+  showMoreLinkDest = "docs"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
-  showDate = true
+  showDate = false
   showViews = false
   showLikes = false
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
 ## showAuthorBottom = true
-  showHero = false
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
@@ -82,27 +82,24 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showReadingTime = true
   showTableOfContents = true
   showRelatedContent = false
-  relatedContentLimit = 6
+  relatedContentLimit = 9
   showTaxonomies = true # use showTaxonomies OR showCategoryOnly, not both
-  cardView = true
-  showComments = true
-  showWordCount = false
-  showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
   showAuthorsBadges = true
+  showWordCount = false
   sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
   showZenMode = true
 
 [list]
-  showHero = false
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = false
   showViews = false
   showLikes = false
+  showSummary = false
   showTableOfContents = true
   showCards = true
-  showSummary = false
   orderByWeight = true
   groupByYear = false
   cardView = true
@@ -114,7 +111,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [taxonomy]
   showTermCount = true
-  showHero = false
+  showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
@@ -123,8 +120,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardView = false
 
 [term]
-  showHero = false
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
