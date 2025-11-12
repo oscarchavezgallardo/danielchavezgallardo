@@ -66,8 +66,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDateUpdated = false
   showAuthor = true
 ## showAuthorBottom = true
-  showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = false
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
@@ -90,7 +90,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showZenMode = true
 
 [list]
-  showHero = true
+  showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
@@ -111,7 +111,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [taxonomy]
   showTermCount = true
-  showHero = true
+  showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
@@ -120,7 +120,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardView = false
 
 [term]
-  showHero = true
+  showHero = false
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
