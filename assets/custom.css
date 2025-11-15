@@ -1,0 +1,51 @@
+/*
+ * === REGLAS DE FONDO Y DISEÑO DE TARJETA (FINAL) ===
+ */
+
+/* 1. FORZAR IMAGEN DE FONDO EN EL BODY */
+body {
+    /* La ruta correcta de la imagen (debe estar en static/img/ o assets/img/) */
+    background-image: url("/img/wald.jpg") !important; 
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    background-color: transparent !important; 
+}
+
+/* 2. ASEGURAR QUE EL CONTENEDOR PRINCIPAL SEA TRANSPARENTE */
+.single-header, .list-header, .main-content {
+    background-color: transparent !important;
+}
+
+/* 3. FORZAR DISEÑO DE CUADRÍCULA (GRID) */
+#recent-posts-list {
+    display: grid !important; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important; 
+    gap: 30px !important; 
+    align-items: flex-start !important; 
+    width: 100% !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* 4. AJUSTE DE LA TARJETA (Para que se vea en dos columnas) */
+.article-link-simple {
+    display: flex !important; 
+    flex-direction: column !important; /* Estructura vertical (imagen arriba, texto abajo) */
+    align-items: center !important; 
+    text-align: center !important;
+    width: 100% !important;
+    min-height: 280px !important;
+    padding: 15px !important; 
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 5. AJUSTE DE IMAGEN DESTACADA */
+.article-link-simple img {
+    width: 150px !important; 
+    height: 150px !important; 
+    object-fit: contain !important; 
+    margin-bottom: 15px !important;
+}
+/* ... (Incluye el resto de tus reglas de espaciado si las tenías) ... */
